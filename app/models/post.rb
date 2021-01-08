@@ -4,7 +4,7 @@ class Post < ApplicationRecord
     belongs_to :user
     validates :name, presence: true
     validates :content, presence: true
-    accepts_nested_attributes_for :tags, reject_if: proc {|attributes| attributes['name'].blank?}
+    
     
   
 end
